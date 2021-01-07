@@ -4,9 +4,12 @@ import Inputs from './Inputs';
 
 
 const BoxCart = styled.div`
+display: flex;
+flex-direction: column;
 border: 1px dotted black;
-margin: 1%;
-padding:2%;
+margin: auto;
+margin-right: 1%;
+padding:4%;
 min-height:60vh;
 max-width: 15vh;
 flex-grow:1;
