@@ -1,26 +1,58 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import FilterLeftSide from './components/FilterLeftSide'
+import CartBox from './components/CartBox'
 
-function App() {
+export default function App() {
+
+  const titulo = "Título do vídeo"
+
+  function reproduzVideo() {
+    alert("O vídeo está sendo reproduzido")
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="main-container">
+        <FilterLeftSide />
+        <section className="painel-de-videos">
+          <div className="box-pagina-principal">
+            <img src="https://picsum.photos/400/400?a=2" alt="" />
+            <h4>{titulo}</h4>
+          </div>
+          <div className="box-pagina-principal">
+            <img src="https://picsum.photos/400/400?a=2" alt="" />
+            <h4>{titulo}</h4>
+          </div>
+          <div className="box-pagina-principal">
+            <img src="https://picsum.photos/400/400?a=2" alt="" />
+            <h4>{titulo}</h4>
+          </div>
+          <div className="box-pagina-principal">
+            <img src="https://picsum.photos/400/400?a=2" alt="" />
+            <h4>{titulo}</h4>
+          </div>
+          <div className="box-pagina-principal">
+            <img src="https://picsum.photos/400/400?a=2" alt="" />
+            <h4>{titulo}</h4>
+          </div>
+          <div className="box-pagina-principal">
+            <img src="https://picsum.photos/400/400?a=2" alt="" />
+            <h4>{titulo}</h4>
+          </div>
+          <div className="box-pagina-principal">
+            <img src="https://picsum.photos/400/400?a=2" alt="" />
+            <h4>{titulo}</h4>
+          </div>
+          <div className="box-pagina-principal">
+            <img src="https://picsum.photos/400/400?a=2" alt="" />
+            <h4>{titulo}</h4>
+          </div>
+        </section>
+      <CartBox/>
+
+      </div>
+
+    </>
   );
 }
-
-export default App;
