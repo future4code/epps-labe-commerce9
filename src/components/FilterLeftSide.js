@@ -3,26 +3,38 @@ import styled from 'styled-components';
 import Inputs from './Inputs';
 
 const BoxFilter = styled.div`
-border: 1px dotted black;
-margin: 1%;
-padding:2%;
-min-height:60vh;
-max-width: 15vh;
-flex-grow:1;
-`
+width: 80%;
+height: 14vh;
+display: flex;
+justify-content: center;
+background-color: #202124;
+box-sizing:border-box;
+padding: 10px;
+margin-top: 0px;
 
+`
+const Fontes = styled.p ` 
+  margin-top: 30px;
+  color: white;
+`
+const Titulo = styled.p `
+  color:white;
+  opacity: 0.7;
+
+  
+`
 
 class FilterLeftSide extends React.Component {
   render() {
     return (
       <BoxFilter>
-        <h1>Filtro</h1>
-        
-        <p>Valor Mínimo:</p>
+        <Titulo>filtrar</Titulo>
+        <br/>
+        <Fontes>Valor Mínimo:</Fontes>
         <Inputs/>
-        <p>Valor Máximo:</p>
+        <Fontes>Valor Máximo:</Fontes>
         <Inputs/>
-        <p>Buscar Produto</p>
+        <Fontes>Buscar Produto:</Fontes>
         <Inputs/>
       </BoxFilter>
     )
