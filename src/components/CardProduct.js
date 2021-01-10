@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Nav = styled.nav `
-    width: 79vw;
-    box-sizing: border-box;
-    border: 1px solid black;
-    
+  width: 75vw;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 0px;
+  margin-left: 40px;    
 `
 
 const Ordenar = styled.div `
@@ -13,16 +15,16 @@ const Ordenar = styled.div `
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   box-sizing: border-box;
   padding: 1%;
+  margin-top: 1%;
 `
 const BoxProduct = styled.div `
 width: 100%;
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-
 `
 
 const Product = styled.div `
@@ -32,9 +34,6 @@ margin: 2%;
 padding: 5px;
 border: 1px solid black;
 border-radius: 5px;
-
-
-
 `
 const Imagem = styled.img `
   width: 100%;
@@ -54,16 +53,9 @@ class CardProduct extends React.Component {
   render() {
     return (
       <Nav>
-        <Ordenar>
-          <p>Quantidade de Produtos: 8</p>
-          <select>
-            <option value="crescente">Preço: Crescente</option>
-            <option value="decrescente">Preço: Decrescente</option>
-          </select>
-        </Ordenar>
         <BoxProduct>
           <Product>
-            <Imagem src="https://picsum.photos/400/400?a=2" alt="" />
+            <Imagem src={this.props.imgUrl} alt="" />
             <p>Titulo do Produto</p>
             <p>R$50,00</p>
             <Botao>Adicionar ao Carrinho</Botao>
