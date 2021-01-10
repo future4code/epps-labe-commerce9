@@ -6,6 +6,7 @@ import Inputs from './Inputs';
 const BoxCart = styled.div`
 display: flex;
 flex-direction: column;
+justify-self: right;
 border: 1px dotted black;
 margin: auto;
 margin-right: 1%;
