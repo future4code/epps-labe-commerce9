@@ -6,14 +6,15 @@ import Inputs from './Inputs';
 const BoxCart = styled.div`
 display: flex;
 flex-direction: column;
-justify-self: right;
-border: 1px dotted black;
-margin: auto;
-margin-right: 1%;
-padding:4%;
-min-height:60vh;
-max-width: 15vh;
-flex-grow:1;
+width: 18vw;
+position: relative;
+left: 80vw;
+bottom: 121vh;
+box-sizing: border-box;
+padding: 5px;
+border-radius: 5px;
+background-color: #202124;
+color:white;
 `
 
 
@@ -22,10 +23,7 @@ class CartBox extends React.Component {
     return (
       <BoxCart>
         <h1>Carrinho</h1>
-        <p>Valor Mínimo:</p>
-        <p>Valor Máximo:</p>
-        <p>Buscar Produto</p>
-      
+        <p>Total: <strong>R$</strong></p>      
       </BoxCart>
     )
   }
