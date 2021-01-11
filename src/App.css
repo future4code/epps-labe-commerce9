@@ -1,6 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  
+}
+
+body {
+  background-image: linear-gradient(#ffed66, #ffffea, #df4543)
 }
 
 

@@ -10,7 +10,9 @@ justify-content: center;
 background-color: #202124;
 box-sizing:border-box;
 padding: 10px;
+border-radius: 0px 0px 10px 10px;
 margin-top: 0px;
+margin-left: 10px;
 
 `
 const Fontes = styled.p ` 
@@ -19,9 +21,7 @@ const Fontes = styled.p `
 `
 const Titulo = styled.p `
   color:white;
-  opacity: 0.7;
-
-  
+  opacity: 0.7;  
 `
 
 class FilterLeftSide extends React.Component {

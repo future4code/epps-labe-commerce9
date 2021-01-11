@@ -17,7 +17,6 @@ background-color: #202124;
 color:white;
 `
 
-
 class CartBox extends React.Component {
   render() {
     return (
